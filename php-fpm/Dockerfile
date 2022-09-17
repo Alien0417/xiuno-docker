@@ -1,4 +1,4 @@
-FROM php:fpm
+FROM php:7.1-fpm
 Maintainer rayfalling <wanghaiwe.i.1999@163.com>
 
 COPY php.ini /usr/local/etc/php/php.ini 
