@@ -22,7 +22,7 @@ services:
     php-fpm:
         build: ./php-fpm
         # image指定build Dockerfile生成镜像的名称
-        image: php:fpm-mysqli-latest
+        image: php:7.1
         expose:
             - "9000"
         volumes:
@@ -32,7 +32,7 @@ services:
         container_name: "xiuno-php-fpm"
     mysql:
         build: ./mysql
-        image: mysql:fixed-auth-latest
+        image: mysql:5.6
         expose:
             - "3306"
         # 环境变量
